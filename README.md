@@ -1,6 +1,9 @@
 # Download-Gdrive-Protected-PDFs
 Browser's console code to download the read-only Gdrive pdfs.    
-When the Download, print and copy has been disabled for a Google drive shared PDF file then you can simply run this code in your browser's console(ctrl+shift+j).   
+
+When the Download, print and copy has been disabled for a Google drive shared PDF file then you can simply run this code in your browser's console(ctrl+shift+j).  
+    
+Make sure to open that pdf separately on a new tab(Get the URL of the pdf and open the url in a new tab)     
 Change the width according to your need.   
 ```
 var width = 1500; //put the width in px according to your quality requirement
