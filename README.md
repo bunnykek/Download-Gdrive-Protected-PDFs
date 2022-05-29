@@ -3,7 +3,7 @@ Browser's console code to download the read-only Gdrive pdfs.
 When the Download, print and copy has been disabled for a Google drive shared PDF file then you can simply run this code in your browser's console(ctrl+shift+j).   
 Change the width according to your need.   
 ```
-let width = 1500 //put the width in px according to your quality requirement
+var width = 1500; //put the width in px according to your quality requirement
 
 //Dont change anything from below
 let raw = document.querySelector("head").innerHTML;
@@ -22,8 +22,8 @@ await(async () => {
   height = img.height;
 })();
 
-console.log("https://github.com/bunnykek")
-console.log(`Page dimensions: ${width} X ${height}`)
+console.log("https://github.com/bunnykek");
+console.log(`Page dimensions: ${width} X ${height}`);
 
 const doc = new jspdf.jsPDF({
   orientation: 'p',
