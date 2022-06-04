@@ -9,10 +9,10 @@ Change the width according to your need.
 var width = 1500; //put the width in px according to your quality requirement
 
 //Dont change anything from below
-let raw = document.querySelector("head").innerHTML;
-let token = raw.match(/https:\/\/drive\.google\.com\/viewer2\/prod-0\d\/meta\?ck\\u003ddrive\\u0026ds\\u003d(.+?)"/)[1];
-let img_url = `https://drive.google.com/viewer2/prod-01/img?ck=drive&ds=${token}&authuser=0&skiphighlight=true&webp=true&w=${width}&page=`;
-let height;
+var raw = document.querySelector("head").innerHTML;
+var token = raw.match(/https:\/\/drive\.google\.com\/viewer2\/prod-0\d\/meta\?ck\\u003ddrive\\u0026ds\\u003d(.+?)"/)[1];
+var img_url = `https://drive.google.com/viewer2/prod-01/img?ck=drive&ds=${token}&authuser=0&skiphighlight=true&webp=true&w=${width}&page=`;
+var height;
 var s = document.createElement("script");
 s.type = "text/javascript";
 s.src = "https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js";
@@ -28,7 +28,7 @@ await(async () => {
 console.log("https://github.com/bunnykek");
 console.log(`Page dimensions: ${width} X ${height}`);
 
-const doc = new jspdf.jsPDF({
+var doc = new jspdf.jsPDF({
   orientation: 'p',
   unit: 'px',
   format: [width, height],
